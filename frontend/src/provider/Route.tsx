@@ -1,6 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
-import HomePage from "../pages/Home"; 
 import ErrorPage from "../pages/Error";
 import Invoice from "../pages/Invoice";
 import UserPage from "../pages/Users";
@@ -13,8 +12,8 @@ export const Routes = createBrowserRouter([
         Component:App,
         children:[
             {
-                path:'/',
-                Component: HomePage
+                path:'/welcome',
+                Component: welcome
             },
             {
                 path: '/invoice',
@@ -34,11 +33,6 @@ export const Routes = createBrowserRouter([
                 Component: ErrorPage
             }
         ]
-    },
-    {
-        path: '/welcome',
-        Component: welcome,
-        
     },
     // {
     //     path: '/login',
