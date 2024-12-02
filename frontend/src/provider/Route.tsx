@@ -1,11 +1,11 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
+import HomePage from "../pages/Home"; 
 import ErrorPage from "../pages/Error";
 import Invoice from "../pages/Invoice";
 import UserPage from "../pages/Users";
 import OrdersPage from "../pages/Orders";
 import welcome from "../pages/Welcome";
-import HomePage from "../pages/Home";
 
 export const Routes = createBrowserRouter([
     {
@@ -15,10 +15,6 @@ export const Routes = createBrowserRouter([
             {
                 path:'/',
                 Component: HomePage
-            },
-            {
-                path:'/welcome',
-                Component: welcome
             },
             {
                 path: '/invoice',
